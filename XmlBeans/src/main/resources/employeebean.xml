@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+              http://www.springframework.org/schema/beans/spring-beans-2.5.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	<context:annotation-config></context:annotation-config>
+	<bean id="e1" class="spring.Employee" scope="prototype">
+		<property name="eid" value="102"/>
+		<property name="name" value="Jennie"/>
+		<property name="salary" value="5000"/>
+		<property name="dept" value="HR"/>
+		<property name="email" value="jennie@example.com"/>
+	</bean>
+		<bean id="e2" class="spring.Employee">
+		<property name="eid" value="201"/>
+		<property name="name" value="George"/>
+		<property name="salary" value="5700"/>
+		<property name="dept" value="Admin"/>
+		<property name="email" value="george@example.com"/>
+	</bean>
+
+</beans>
